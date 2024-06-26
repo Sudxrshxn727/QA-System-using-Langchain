@@ -13,7 +13,7 @@ This project is a Question-Answer (QA) system for customer query and issue searc
 The project consists of three main files:
 
 1. **main.py**: Contains the Streamlit code for the user interface.
-2. **app.py**: Handles data connection, vector database creation, LLM model integration, and prompt template definition.
+2. **lang.py**: Handles data connection, vector database creation, LLM model integration, and prompt template definition.
 3. **.env**: Stores the API key for Google Palm.
 
 ## Installation
@@ -79,7 +79,7 @@ from langchain.vectorstores import FAISS
 import streamlit as st
 ```
 
-### app.py
+### lang.py
 
 - **API Connection**: Connects to the Google Palm API using the key from the `.env` file.
 - **Data Source**: Loads customer queries and answers from a CSV file.
